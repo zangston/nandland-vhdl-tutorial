@@ -8,7 +8,7 @@ entity tutorial_led_blink is
         i_enable    : in  std_logic;
         i_switch_1  : in  std_logic;
         i_switch_2  : in  std_logic;
-        o_led_drive : out std_logic;
+        o_led_drive : out std_logic
     );
 end tutorial_led_blink;
 
