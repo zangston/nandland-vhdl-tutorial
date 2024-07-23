@@ -17,13 +17,13 @@ architecture rtl of tutorial_led_blink is
     -- Formula is: (25 MHz / 100 Hz * 50% duty cycle)
     constant c_CNT_100HZ : natural := 125000;
     constant c_CNT_50HZ  : natural := 250000;
-    constant c_CNT_10Z   : natural := 1250000;
+    constant c_CNT_10HZ  : natural := 1250000;
     constant c_CNT_1HZ   : natural := 12500000;
 
     -- Counter signals
     signal r_CNT_100HZ : natural range 0 to c_CNT_100HZ;
     signal r_CNT_50HZ  : natural range 0 to c_CNT_50HZ;
-    signal r_CNT_10HZ  : natural range 0 to c_CNT_10Z;
+    signal r_CNT_10HZ  : natural range 0 to c_CNT_10HZ;
     signal r_CNT_1HZ   : natural range 0 to c_CNT_1HZ;
 
     -- Toggle signals for selecting frequency
